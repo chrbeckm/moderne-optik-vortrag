@@ -1,49 +1,29 @@
 % This example is meant to be compiled with lualatex or xelatex
 % The theme itself also supports pdflatex
 \PassOptionsToPackage{unicode}{hyperref}
-\documentclass[aspectratio=169, 9pt]{beamer}
+\documentclass[aspectratio=169, 9pt, bibliography=totoc]{beamer}
 
-% Load packages you need here
-\usepackage{polyglossia}
-\setmainlanguage{german}
+\input{header.tex}
 
-\usepackage{csquotes}
-
-
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathtools}
-
-\usepackage{hyperref}
-\usepackage{bookmark}
-
-% load the theme after all packages
-
-\usetheme[
-  showtotalframes, % show total number of frames in the footline
-]{tudo}
-
-% Put settings here, like
-\unimathsetup{
-  math-style=ISO,
-  bold-style=ISO,
-  nabla=upright,
-  partial=upright,
-  mathrm=sym,
-}
-
-\title{Fourier-Optik - Tarnen von Gegenständen}
+\title{Tarnung}
 \author[C.~Beckmann]{Christian Beckmann}
 \institute[Seminar Moderne Optik]{Seminar Moderne Optik}
-\titlegraphic{\includegraphics[width=0.7\textwidth]{images/tudo-title-2.jpg}}
+\titlegraphic{\includegraphics[height=0.6\textheight]{images/2014-09-11-howell-cloaking-164-crop-630x420.jpg}}
+
+% \newcommand \bfit[1]{\textbf{\textit{#1}}}
 
 \begin{document}
 
 \maketitle
 
-\begin{frame}{Einführung}
+\begin{frame}{Themen\"ubersicht}
   \tableofcontents
 \end{frame}
 
+\input{content/uebersicht.tex}
+
+\begin{frame}{Literaturverzeichnis}
+	\printbibliography
+\end{frame}
 
 \end{document}
