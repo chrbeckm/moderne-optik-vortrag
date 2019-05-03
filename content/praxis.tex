@@ -1,4 +1,4 @@
-\section{Ein Beispiel zum nachrechnen und -bauen}
+\section{Ein Beispiel zum rechnen und nachbauen}
 
 \begin{frame}{Das System}
   \begin{figure}
@@ -56,7 +56,7 @@
         \text{Steigung}\;&v
         \intertext{Betrachtung des Brechungsindizes $n$:}
         V &\coloneq nv \\
-        X &\coloneq \frac{x}{n}
+        t &\coloneq \frac{x}{n}
       \end{align*}
     \end{column}
     \begin{column}{0.58\textwidth}
@@ -67,7 +67,7 @@
         \begin{pmatrix} y_1 \\ v_1 \\ \end{pmatrix}
         &\implies
         \begin{pmatrix} Y_2 \\ V_2 \\ \end{pmatrix} =
-        \begin{pmatrix} 1 & X \\ 0 & 1 \\ \end{pmatrix}
+        \begin{pmatrix} 1 & t \\ 0 & 1 \\ \end{pmatrix}
         \begin{pmatrix} Y_1 \\ V_1 \\ \end{pmatrix}
         \intertext{Refraktionsmatrix (d\"unne Linsen):}
         R = \begin{pmatrix} 1 & 0 \\ -\frac{n_2-n_1}{r} & 1 \\ \end{pmatrix}
@@ -166,4 +166,15 @@
       mit $f_1>\!>t_1$ $\implies$ Tarnkappe
     \end{column}
   \end{columns}
+\end{frame}
+
+\begin{frame}{Schließlich das System mit allen vier Linsen}
+  \begin{columns}
+    \begin{column}{0.48\textwidth}
+      \begin{align*}
+        f_1 &= f_4 \\
+        f_2 &= f_3
+      \end{align*}
+    \end{column}
+  \end{columns}  
 \end{frame}
