@@ -216,13 +216,12 @@
     \begin{column}{0.49\textwidth}
       Winkel bez\"uglich der Mittelachse:\\
       \begin{align*}
-        (a) \quad &\SI{-0.65}{\degree} \\ 
-        (b) \quad &\SI{0}{\degree} \\ 
-        (c) \quad &\SI{0.47}{\degree} \\ 
-        (d) \quad &\SI{0.95}{\degree} \\
+        (a) &\SI{-0.65}{\degree} \\ 
+        (b) &\SI{0}{\degree} \\ 
+        (c) &\SI{0.47}{\degree} \\ 
+        (d) &\SI{0.95}{\degree} \\
         ~&~ \\
-        \text{Abstand: Schirm-Linse} \quad &\SI{1.9}{\meter} \\
-        \text{Abstand: Linse-Kamera} \quad &\SI{3.1}{\meter}
+
       \end{align*}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -234,19 +233,6 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Weclher Bereich wird getarnt?}
-  \begin{figure}
-    \centering
-    \caption{Simulation der Lichtstrahlen durch das Linsensystem.}
-    \includegraphics[width=0.8\textwidth]{images/skizze.png}
-  \end{figure}
-  \begin{figure}
-    \centering
-    \caption{Seitenaufnahme des Linsensystems.}
-    \includegraphics[width=0.6\textwidth]{images/laser-seite.jpg}
-  \end{figure}
-
-\end{frame}
 \subsection{Anwendungen}
 \begin{frame}{M\"ogliche Anwendungen}
   \begin{itemize}
