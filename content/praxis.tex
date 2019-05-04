@@ -70,7 +70,7 @@
         \begin{pmatrix} 1 & t \\ 0 & 1 \\ \end{pmatrix}
         \begin{pmatrix} Y_1 \\ V_1 \\ \end{pmatrix}
         \intertext{Refraktionsmatrix (d\"unne Linsen):}
-        R = \begin{pmatrix} 1 & 0 \\ -\frac{n_2-n_1}{r} & 1 \\ \end{pmatrix}
+        F = \begin{pmatrix} 1 & 0 \\ -\frac{n_2-n_1}{r} & 1 \\ \end{pmatrix}
         &\implies \begin{pmatrix} 1 & 0 \\ -P & 1 \\ \end{pmatrix}
         = \begin{pmatrix} 1 & 0 \\ -\frac{1}{f} & 1 \\ \end{pmatrix} \\
         f &: \text{Brennweite}
@@ -170,10 +170,25 @@
 
 \begin{frame}{Schließlich das System mit allen vier Linsen}
   \begin{columns}
-    \begin{column}{0.48\textwidth}
+    \begin{column}{0.3\textwidth}
+      Zuerst ein paar Annahmen:
       \begin{align*}
         f_1 &= f_4 \\
-        f_2 &= f_3
+        f_2 &= f_3 \\
+        t_1 &= _3
+      \end{align*}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{align*}
+        M_{L=4} &= F_4\:T_3\:F_3\:T_2\:F_2\:T_1\:F_1 \\
+        &= F_1\:T_1\:F_2\:T_2\:F_2\:T_1\:F_1 \\
+        \text{mit}\quad t_1 &= f_1 + f_2
+        \intertext{ergibt sich}
+        M_{L=4} &=
+        \begin{pmatrix}
+          1 & \frac{f_1^2t_2}{f_2^2}-\frac{2f_1^2}{f_2}-2f_1 \\
+          0 & 1 \\
+        \end{pmatrix}
       \end{align*}
     \end{column}
   \end{columns}  
