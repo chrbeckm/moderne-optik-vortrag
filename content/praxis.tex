@@ -79,7 +79,7 @@
   \end{columns}
 \end{frame}
 
-\subsection{Diskussion des Systems}
+\subsection{Rechnungen}
 \begin{frame}{Warum vier Linsen?}
   Eine Tarnkappe der L\"ange $L$ wird in der Matrizenoptik durch
   \begin{align*}
@@ -170,26 +170,38 @@
 
 \begin{frame}{Schließlich das System mit allen vier Linsen}
   \begin{columns}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.48\textwidth}
       Zuerst ein paar Annahmen:
       \begin{align*}
         f_1 &= f_4 \\
         f_2 &= f_3 \\
-        t_1 &= _3
+        t_1 &= t_3
+        \intertext{Stellen wir nun die Matrizen auf:}
+        M_{L=4} &= F_4\:T_3\:F_3\:T_2\:F_2\:T_1\:F_1 \\
+        &= F_1\:T_1\:F_2\:T_2\:F_2\:T_1\:F_1
+        \intertext{als zus\"atzliche Bedingung nehmen wir an:}
+        t_1 &= f_1 + f_2
       \end{align*}
     \end{column}
-    \begin{column}{0.68\textwidth}
+    \begin{column}{0.48\textwidth}
+      Damit vereinfacht sich die Matrix zu:
       \begin{align*}
-        M_{L=4} &= F_4\:T_3\:F_3\:T_2\:F_2\:T_1\:F_1 \\
-        &= F_1\:T_1\:F_2\:T_2\:F_2\:T_1\:F_1 \\
-        \text{mit}\quad t_1 &= f_1 + f_2
-        \intertext{ergibt sich}
         M_{L=4} &=
         \begin{pmatrix}
           1 & \frac{f_1^2t_2}{f_2^2}-\frac{2f_1^2}{f_2}-2f_1 \\
           0 & 1 \\
         \end{pmatrix}
+        \stackrel{!}{=}
+        \begin{pmatrix} 1 & L \\ 0 & 1 \\ \end{pmatrix} \\~\\
+        L &= 2t_1 + t_2 = 2f_1 + 2f_2 + t_2 \\
+        \implies\;t_2 &= -2f_2 \frac{f_1+f_2}{f_1-f_2} \\
+        &\implies\;f_2 > f_1
       \end{align*}
     \end{column}
   \end{columns}  
+\end{frame}
+
+\subsection{Aufbau}
+\begin{frame}{Wechsel von der Theorie in die Praxis}
+  
 \end{frame}
