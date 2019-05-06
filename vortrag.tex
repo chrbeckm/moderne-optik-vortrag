@@ -1,5 +1,3 @@
-% This example is meant to be compiled with lualatex or xelatex
-% The theme itself also supports pdflatex
 \PassOptionsToPackage{unicode}{hyperref}
 \documentclass[aspectratio=169, 9pt, bibliography=totoc]{beamer}
 
@@ -10,8 +8,7 @@
 \institute[Seminar Moderne Optik]{Seminar Moderne Optik}
 \titlegraphic{\includegraphics[height=0.6\textheight]{images/hand-cloak.jpg}}
 \date{08. Mai 2019}
-% \newcommand \bfit[1]{\textbf{\textit{#1}}}
-\newcommand \matrize[1]{\underline{\underline{#1}}}
+%\newcommand \matrize[1]{\underline{\underline{#1}}}
 \begin{document}
 
 \maketitle
@@ -22,16 +19,18 @@
 
 \input{content/uebersicht.tex}
 \input{content/praxis.tex}
+\input{content/beispiele.tex}
 
-\begin{frame}
+\begin{frame}{Zusammenfassung}
   \begin{itemize}
     \item Tarnung von Gegenständen im sichtbaren Bereich möglich
     \item tarnen der Tarnung ist schwierig
-    \item $\SI{360}{\degree}$-Tarnung so nicht m\"oglich
+    \item $\SI{360}{\degree}$-Tarnung ist so nicht m\"oglich
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Literaturverzeichnis}
+\section{Literaturverzeichnis}
+\begin{frame}
 	\printbibliography
 \end{frame}
 
